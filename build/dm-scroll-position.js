@@ -4,7 +4,7 @@ mod = angular.module('on-scroll', []);
 
 mod.value('THROTTLE_MILLISECONDS', null);
 
-mod.directive('onScroll', ['$rootScope', '$window', '$timeout', 'THROTTLE_MILLISECONDS',
+mod.directive('onScroll', ['$scope', '$window', '$timeout', 'THROTTLE_MILLISECONDS',
     function ($window, $timeout) {
         return {
             restrict: "A",
